@@ -1,10 +1,11 @@
 <h1>Listing photos</h1>
 
-<table>
+<table class="tanb">
   <tr>
     <th>Location</th>
     <th>Date</th>
     <th>Time</th>
+    <th>User</th>
     <th></th>
     <th></th>
     <th></th>
@@ -15,6 +16,7 @@
     <td><%= photo.location %></td>
     <td><%= photo.date %></td>
     <td><%= photo.time %></td>
+    <td><%= photo.user ? photo.user.email : '' %></td>
     <td><%= link_to 'Show', photo %></td>
     <td><%= link_to 'Edit', edit_photo_path(photo) %></td>
     <td><%= link_to 'Destroy', photo, method: :delete, data: { confirm: 'Are you sure?' } %></td>

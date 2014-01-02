@@ -1,0 +1,24 @@
+<h1>Listing users</h1>
+
+<table class="tanb">
+  <tr>
+    <th>Email</th>
+    <th>Number of Photos</th>
+    <th></th>
+    <th></th>
+
+  </tr>
+
+<% @users.each do |user| %>
+  <tr>
+    <td><%= user.email %></td>
+    <td><%= user.photos.count %></td>
+    <td><%= link_to 'Show', '#' %></td>
+    <td><%= link_to 'Edit', '#' %></td>
+ 
+  </tr>
+<% end %>
+</table>
+
+<br />
+
