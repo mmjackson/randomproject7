@@ -1,0 +1,1 @@
+su - vagrant -c "cd /vagrant;bundle install"
